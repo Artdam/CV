@@ -99,7 +99,7 @@ header.hero-gradient {
 	}
 }
 
-// O mnie
+// About me
 
 .aboutme {
 	i {
@@ -122,7 +122,7 @@ header.hero-gradient {
 	}
 }
 
-// Kontakt
+// Contact
 
 .contact {
 	position: relative;
@@ -173,5 +173,16 @@ header.hero-gradient {
 				color: $primary-color;
 			}
 		}
+	}
+
+	// Clock
+
+	.clock-container {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 36px;
+		color: $text-color;
+		font-weight: bold;
 	}
 }

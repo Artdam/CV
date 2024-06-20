@@ -17,5 +17,25 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	)
 
+	const clock = document.createElement('div')
+	clock.id = 'clock'
+	clock.classList.add('clock-container')
+	const contactSection = document.getElementById('contact')
+	contactSection.appendChild(clock)
+
+	function updateClock() {
+		const now = new Date()
+		let hours = now.getHours()
+		let minutes = now.getMinutes()
+		let seconds = now.getSeconds()
+
+		hours = (hours < 10 ? '0' : '') + hours
+		minutes = (minutes < 10 ? '0' : '') + minutes
+		seconds = (seconds < 10 ? '0' : '') + seconds
+
+		clock.textContent = `${hours}:${minutes}:${seconds}`
+	}
+	setInterval(updateClock, 1000)
+
 	window.addEventListener('scroll', addShadow)
 })

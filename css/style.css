@@ -186,4 +186,12 @@ header.hero-gradient .fa-chevron-down {
 }
 .contact .contact-me .social-media a:hover {
   color: rgb(172, 235, 152);
+}
+.contact .clock-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
+  color: rgb(255, 255, 240);
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
